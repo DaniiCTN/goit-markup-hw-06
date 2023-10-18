@@ -70,7 +70,11 @@
               EFFECTIVE SOLUTIONS FOR <br />
               YOUR BUSINESS
             </h1>
-            <button type="button" data-modal-open class="effective-solutions-button">
+            <button
+              type="button"
+              data-modal-open
+              class="effective-solutions-button"
+            >
               Request our service
             </button>
           </div>
@@ -139,27 +143,33 @@
               <li>
                 <div class="what-we-do-images">
                   <img
-                  src="./images/what-we-do-1.jpg"
-                  alt="Back end"
-                  width="370"
-                />
+                    src="./images/what-we-do-1.jpg"
+                    alt="Back end"
+                    width="370"
+                  />
                   <div class="what-we-do-images-text"><p>Desktop apps</p></div>
                 </div>
               </li>
               <li>
                 <div class="what-we-do-images">
                   <img
-                  src="./images/what-we-do-2.jpg"
-                  alt="Front end"
-                  width="370"
-                />
+                    src="./images/what-we-do-2.jpg"
+                    alt="Front end"
+                    width="370"
+                  />
                   <div class="what-we-do-images-text"><p>Mobile APPS</p></div>
                 </div>
               </li>
               <li>
                 <div class="what-we-do-images">
-                  <img src="./images/what-we-do-3.jpg" alt="Design" width="370" />
-                  <div class="what-we-do-images-text"><p>DESIGN SOLUTIONS</p></div>
+                  <img
+                    src="./images/what-we-do-3.jpg"
+                    alt="Design"
+                    width="370"
+                  />
+                  <div class="what-we-do-images-text">
+                    <p>DESIGN SOLUTIONS</p>
+                  </div>
                 </div>
               </li>
             </ul>
@@ -408,6 +418,26 @@
           </li>
         </ul>
       </div>
+
+      <div class="footer-form-section">
+        <h3 class="form-title">Subscribe to the newsletter</h3>
+
+        <div>
+          <form class="footer-form-container" action="" method="get">
+            <label for="email"></label>
+            <div>
+              <input class="footer-email-box" type="email" id="email" placeholder="E-mail">
+            </div>
+  
+            <div class="footer-subscribe-button-container">
+              <input class="footer-subscribe-button" type="submit" value="Subscribe">
+              <svg class="footer-subscribe-button-icon">
+                <use href="./images/symbol-defs.svg#icon-icon-send"></use>
+              </svg>
+            </div>
+          </form>
+        </div>
+      </div>
     </footer>
 
     <!-- Modal -->
@@ -419,9 +449,92 @@
             <use href="./images/symbol-defs.svg#icon-close-button"></use>
           </svg>
         </div>
+
+        <div class="modal-container">
+          <h2 class="modal-title">
+            Leave your information and we'll call you back
+          </h2>
+
+          <form action="" method="get" autocomplete="off">
+            <label class="form-label" for="name">Name</label>
+            <div class="input-textfield-container">
+              <input
+                class="textfield"
+                type="text"
+                name="name"
+                id="name"
+                required
+              />
+              <svg class="modal-icons">
+                <use href="./images/symbol-defs.svg#icon-person"></use>
+              </svg>
+            </div>
+
+            <label class="form-label" for="phone_number">Telephone</label>
+            <div class="input-textfield-container">
+              <input
+                class="textfield"
+                type="tel"
+                name="phone_number"
+                id="phone_number"
+                required
+              />
+              <svg class="modal-icons">
+                <use href="./images/symbol-defs.svg#icon-phone"></use>
+              </svg>
+            </div>
+
+            <label class="form-label" for="email">Email</label>
+            <div class="input-textfield-container">
+              <input
+                class="textfield"
+                type="email"
+                name="email"
+                id="email"
+                required
+              />
+              <svg class="modal-icons">
+                <use href="./images/symbol-defs.svg#icon-email"></use>
+              </svg>
+            </div>
+
+            <label class="form-label" for="comments">Comments</label>
+            <div>
+              <textarea
+                class="comments-area"
+                name="comments"
+                id="comments"
+                cols="30"
+                rows="10"
+                placeholder="Enter the text"
+              ></textarea>
+            </div>
+
+            <div class="terms-and-condition-checkbox">
+              <input
+                class="terms-and-conditions-check"
+                name="terms-and-conditions-check"
+                id="terms-and-conditions-check"
+                value="Checked"
+                type="checkbox"
+              />
+              <label for="terms-and-conditions-check">
+                <svg class="icon-checkbox">
+                  <use href="./images/symbol-defs.svg#icon-unchecked"></use>
+                </svg>
+                <span
+                >I agree with the letter and accept the
+                <a href="#">Terms and Conditions</a>
+              </span>
+              </label>
+            </div>
+
+            <input class="submit-button" type="submit" value="Send" />
+          </form>
+        </div>
       </div>
     </div>
-    
+
     <script src="./js/modal.js"></script>
   </body>
 </html>
